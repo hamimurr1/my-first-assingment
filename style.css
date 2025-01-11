@@ -3,11 +3,12 @@ body {
   font-family: "Open Sans", serif;
   background-color: #f5f5f5;
 }
+
 .box {
   max-width: 1280px;
   margin: 0 auto;
 }
-saction-pt {
+.box-pt {
   padding-top: 80px;
 }
 .section-header {
@@ -20,9 +21,30 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 24px 0;
+  align-items: center;
 }
-
-.hero {
+nav h4 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.header-button {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 30px 15px 30px;
+  border: 1px solid rgb(0, 106, 80);
+  border-radius: 8px;
+  color: rgb(0, 106, 80);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline;
+  box-sizing: border-box;
+}
+nav button:hover {
+  background: rgb(0, 106, 80);
+  color: rgb(255, 255, 255);
+}
+.banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,24 +52,24 @@ nav {
   background: rgb(198, 228, 214);
   border-radius: 24px;
 }
-.hero-left {
+.banner-left {
   width: 622px;
 }
-.hero-left h5 {
+.banner-left h5 {
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
   color: rgba(14, 14, 14, 0.5);
   margin-bottom: 16px;
 }
-.hero-left h1 {
+.banner-left h1 {
   color: var(--textPrimary);
   font-family: Fira Sans;
   font-size: 56px;
   font-weight: 700;
   line-height: 67px;
 }
-.hero-left button {
+.banner-left button {
   margin-top: 24px;
   border-radius: 8px;
   background: rgb(0, 106, 80);
@@ -58,17 +80,17 @@ nav {
   border: none;
   cursor: pointer;
 }
-.pillars-container {
+.foundations-container {
   display: flex;
 
   padding: 0px;
 }
-.pillars-container {
+.foundations-container {
   margin-top: 32px;
   display: flex;
   gap: 24px;
 }
-.pillar {
+.foundation {
   width: 302px;
   height: 244px;
   border: 1px solid rgba(14, 14, 14, 0.15);
@@ -76,65 +98,65 @@ nav {
   background: rgb(255, 255, 255);
   padding: 24px;
 }
-.pillar img {
+.foundation img {
   width: 64px;
   height: 64px;
 }
-.pillar-content {
+.foundation-content {
   margin-top: 24px;
 }
-.pillar-content h3 {
+.foundation-content h3 {
   font-size: 20px;
   color: rgba(14, 14, 14, 0.8);
 }
-.pillar-content p {
+.foundation-content p {
   margin-top: 12px;
   font-size: 16px;
   color: rgba(14, 14, 14, 0.7);
 }
-.visionOfFuture > p {
+.visions > p {
   margin-top: 24px;
   color: rgba(14, 14, 14, 0.7);
   font-size: 16px;
 }
-.visionOfFuture-container {
+.vision-container {
   margin-top: 32px;
   display: flex;
   gap: 24px;
 }
-.visionOfFuture-card {
+.vision-box {
   border-radius: 16px;
   width: 410.67px;
   height: 325px;
   padding: 32px;
 }
-.visionOfFuture-card-1 {
+.vision-box-1 {
   background: rgba(84, 144, 245, 0.2);
 }
-.visionOfFuture-card-2 {
+.vision-box-2 {
   background: rgb(198, 228, 214);
 }
-.visionOfFuture-card-3 {
+.vision-box-3 {
   background: rgb(247, 235, 207);
 }
-.visionOfFuture-card img {
+.vision-box img {
   width: 64px;
   height: 64px;
 }
-.visionOfFuture-content {
+.vision-text {
   margin-top: 24px;
 }
-.visionOfFuture-content h3 {
+.vision-text h3 {
   font-size: 20px;
   color: rgba(14, 14, 14, 0.8);
 }
-.visionOfFuture-content > p {
+.vision-text > p {
   margin-top: 12px;
   font-size: 16px;
   color: rgba(14, 14, 14, 0.7);
   height: 72px;
 }
-.visionOfFuture-content button {
+.vision-text button {
   border-radius: 8px;
   padding: 11px 20px 11px 20px;
   font-size: 16px;
@@ -142,18 +164,19 @@ nav {
   border: none;
   color: rgb(255, 255, 255);
   font-weight: 600;
+  cursor: pointer;
 }
-.visionOfFuture-card-1 button {
+.vision-box-1 button {
   background: rgb(84, 144, 245);
 }
-.visionOfFuture-card-2 button {
+.vision-box-2 button {
   background: rgb(9, 161, 92);
 }
-.visionOfFuture-card-3 button {
+.vision-box-3 button {
   background: rgb(255, 194, 57);
 }
 
-.visionOfFuture-quote {
+.vision-quote {
   margin-top: 32px;
   border: 1px solid rgba(14, 14, 14, 0.15);
   border-radius: 16px;
@@ -163,59 +186,59 @@ nav {
   background-position: 24px 28px;
   padding: 48px 24px;
 }
-.visionOfFuture-quote > p {
+.vision-quote > p {
   font-size: 16px;
   color: rgba(14, 14, 14, 0.8);
 }
-.visionOfFuture-quote-author {
+.vision-quote-writer {
   margin-top: 12px;
 }
-.visionOfFuture-quote-author h5 {
+.vision-quote-writer h5 {
   font-size: 20px;
   font-weight: 600;
   color: rgba(14, 14, 14, 0.8);
 }
-.visionOfFuture-quote-author p {
+.vision-quote-writer p {
   font-size: 16px;
   color: rgba(14, 14, 14, 0.6);
   margin-top: 4px;
 }
-.recentNews-container {
+.news-container {
   margin-top: 32px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.recentNews {
+.news {
   border-radius: 24px;
   background: rgb(255, 255, 255);
   padding: 48px;
   display: flex;
   gap: 32px;
 }
-.recentNews > img {
+.news > img {
   width: 408px;
   height: 306px;
   border-radius: 24px;
 }
-.recentNews-content {
+.news-text {
   padding: 8px 0;
 }
-.recentNews-content h3 {
+.news-text h3 {
   font-size: 32px;
   font-weight: 700;
   color: rgba(14, 14, 14, 0.8);
   margin-bottom: 12px;
 }
-.recentNews-content p {
+.news-text p {
   font-size: 16px;
   color: rgba(14, 14, 14, 0.7);
   margin: 12px 0;
 }
-.recentNews-content p > span {
+.news-text p > span {
   margin-left: 12px;
 }
-.recentNews-content button {
+.news-text button {
   margin-top: 33px;
   font-size: 18px;
   font-weight: 600;
@@ -224,6 +247,7 @@ nav {
   background: rgb(0, 106, 80);
   padding: 13px 26px;
   border: none;
+  cursor: pointer;
 }
 .donates {
   text-align: center;
@@ -232,14 +256,14 @@ nav {
   width: 1104px;
   margin: 24px auto 0 auto;
 }
-.donate-container {
+.donate-box {
   margin-top: 32px;
   display: flex;
   gap: 24px;
   justify-content: center;
 }
 .donate {
-  padding: 40px;
+  padding: 35px;
   border: 1px solid rgba(14, 14, 14, 0.15);
   border-radius: 16px;
   background: rgb(255, 255, 255);
@@ -282,22 +306,17 @@ nav {
   font-weight: 600;
   border: none;
 }
-.subscribe-content {
+.subscribe-text {
   border-radius: 24px;
   background: rgb(198, 228, 214);
   text-align: center;
   padding: 80px 100px;
 }
-.subscribe-content > p {
+.subscribe-text > p {
   width: 622px;
   margin: 24px auto;
 }
-.subscribe-content form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.subscribe-content form input {
+.subscribe-text form input {
   padding: 18px 40px;
   border-radius: 8px 0px 0px 8px;
   background: rgb(255, 255, 255);
@@ -305,7 +324,13 @@ nav {
   width: 600px;
   font-size: 16px;
 }
-.subscribe-content form button {
+.subscribe-text form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-text form button {
   padding: 17px 34px 17px 34px;
   border-radius: 0px 8px 8px 0px;
   border: none;
