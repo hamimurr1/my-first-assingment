@@ -7,14 +7,14 @@ body {
   max-width: 1280px;
   margin: 0 auto;
 }
- saction-pt{
+saction-pt {
   padding-top: 80px;
- }
- .section-header{
+}
+.section-header {
   color: rgb(14, 14, 14);
   font-size: 40px;
   font-weight: 700;
- }
+}
 
 nav {
   display: flex;
@@ -60,10 +60,7 @@ nav {
 }
 .pillars-container {
   display: flex;
-  
- 
-  align-items: 
-  gap: 32;
+
   padding: 0px;
 }
 .pillars-container {
@@ -154,4 +151,32 @@ nav {
 }
 .visionOfFuture-card-3 button {
   background: rgb(255, 194, 57);
+}
+
+.visionOfFuture-quote {
+  margin-top: 32px;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  background-image: url("../assets/quote-bg.png");
+  background-repeat: no-repeat;
+  background-position: 24px 28px;
+  padding: 48px 24px;
+}
+.visionOfFuture-quote > p {
+  font-size: 16px;
+  color: rgba(14, 14, 14, 0.8);
+}
+.visionOfFuture-quote-author {
+  margin-top: 12px;
+}
+.visionOfFuture-quote-author h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(14, 14, 14, 0.8);
+}
+.visionOfFuture-quote-author p {
+  font-size: 16px;
+  color: rgba(14, 14, 14, 0.6);
+  margin-top: 4px;
 }
